@@ -14,6 +14,7 @@ odoo.define('website_cookie_notice.cookie_notice', function (require) {
             e.preventDefault();
             ajax.jsonRpc('/website_cookie_notice/ok', 'call').then(function (data) {
                 if (data.result == 'ok') {
+                    document.cookie = 'accepted_cookies=1; path=/';
                     $(e.target).closest(".cc-cookies").hide("fast");
                 }
             });
