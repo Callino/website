@@ -16,6 +16,9 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
+    "data": [
+        "views/product.xml",
+    ],
     "depends": [
         "website_seo_redirection", "website_sale"
     ],
